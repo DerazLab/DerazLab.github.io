@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emmanuel Deraz Labrador | UX Design Portfolio</title>
+  <meta name="description" content="Portfolio of Emmanuel Deraz Labrador: user research, interface design in Figma, and front-end engineering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <a class="brand" href="#top">Deraz<span>.</span></a>
+    <button id="menu" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav id="links" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#work">Design work</a>
+      <a href="#engineering">Engineering</a>
+      <a href="#beyond">Beyond design</a>
+      <a href="#contact">Contact</a>
+      <button id="theme" aria-label="Toggle dark mode">◐</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div>
+        <h1>Hi, I'm <span class="accent">Deraz</span>.<br>I design and build usable interfaces.</h1>
+        <p>I'm Emmanuel Deraz Labrador, a software engineering student at UABC in Tijuana. I research how people use a product, design it in Figma, and build it with HTML, CSS, JavaScript and React.</p>
+        <p class="actions">
+          <a class="btn" href="#work">See my work</a>
+          <a class="btn ghost" href="assets/Emmanuel-Deraz-Labrador-UX-Resume.pdf">Resume (PDF)</a>
+        </p>
+      </div>
+      <!-- Add your photo as assets/photo.jpg and swap the initials for: <img src="assets/photo.jpg" alt="Portrait of Emmanuel Deraz Labrador"> -->
+      <div class="avatar" role="img" aria-label="Initials ED">ED</div>
+    </section>
+
+    <section id="about" class="alt">
+      <h2>About <span class="accent">me</span></h2>
+      <div class="two">
+        <p>I'm in my third year of a B.S. in Software Engineering and Emerging Technologies (expected 12/27, GPA 3.61/4.0). My coursework covers Human-Computer Interaction, UI design, user research and web development, and I like projects where research decisions end up in a working product.</p>
+        <ul class="chips" aria-label="Skills">
+          <li>Figma</li><li>Wireframing</li><li>User interviews</li><li>Surveys</li><li>Think-aloud testing</li>
+          <li>Storyboarding</li><li>Heuristic evaluation</li><li>Benchmarking</li><li>HTML/CSS</li><li>JavaScript</li><li>React</li><li>Firebase</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2>Design <span class="accent">work</span></h2>
+
+      <article class="case">
+        <header><h3>AI Marketing Automation App</h3><p class="meta">Figma · Firebase · Deployed · 2026</p></header>
+        <p><strong>Problem.</strong> Content managers lose time adapting trends and writing captions for each social platform, and carry a heavy cognitive load doing it.</p>
+        <p><strong>Process.</strong> I interviewed content managers, benchmarked Ocoya, Predis.ai and Opus Clip, then designed 10 Figma screens: landing page, upload and publish flow, login and registration, and confirmation states.</p>
+        <p><strong>Feedback.</strong> Think-aloud tests with 3 participants led to changes such as more contrast between landing-page sections. The app is deployed on Firebase.</p>
+        <div class="shots">
+          <figure><img src="assets/ai-marketing-figma.png" alt="Figma frames: landing page, upload flow, login, registration and confirmation modal" loading="lazy"><figcaption>Figma screens</figcaption></figure>
+          <figure><img src="assets/ai-marketing-live.png" alt="Deployed landing page headline: Crea para YouTube, with Empezar Gratis and Iniciar Sesión buttons" loading="lazy"><figcaption>Deployed landing page</figcaption></figure>
+        </div>
+      </article>
+
+      <article class="case">
+        <header><h3>Catálogo Cimarrón: Usability Study &amp; Redesign</h3><p class="meta">Figma · UABC Library catalog · Team of 2 · Oct 2025</p></header>
+        <p><strong>Problem.</strong> The university library's catalog is hard to search and look at. In my survey of the existing catalog, 60%+ of respondents rated its visual design unattractive, 53.9% found the search unintuitive and 92.4% said book availability was rarely clear.</p>
+        <p><strong>Process.</strong> We ran a survey and think-aloud usability tests, used storyboards and heuristic evaluation to frame the problems, and co-designed the redesign in Figma.</p>
+        <p><strong>Goals of the redesign.</strong> Modernize the visuals, simplify the search filters and show availability clearly.</p>
+      </article>
+
+      <article class="case">
+        <header><h3>Pet-Sitting Platform: Requirements Elicitation</h3><p class="meta">Interviews · Questionnaire · Observation · 2026</p></header>
+        <p>I mapped stakeholders (owners, sitters, admins) and wrote role-specific interview guides, a closed-question survey and observation plans focused on trust and safety.</p>
+      </article>
+    </section>
+
+    <section id="engineering" class="alt">
+      <h2>Engineering <span class="accent">projects</span></h2>
+      <div class="grid">
+        <article class="card">
+          <h3><a href="https://subri.web.app">subri</a></h3>
+          <p class="meta">React · JavaScript · Tailwind CSS · Firebase</p>
+          <p>Creative web tools: a pixel-art sprite editor with layers, animation timeline, autosave and real-time collaboration, plus customizable drag-and-drop social profiles. Used by UABC classmates in a video game development course.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/DerazLab/monitoruabc">MonitorUABC</a></h3>
+          <p class="meta">Python · JavaScript · REST · Firebase</p>
+          <p>Real-time status dashboard for university servers, with server-side caching that protects institutional infrastructure from overload.</p>
+        </article>
+        <article class="card">
+          <h3>AI Simulation Engine</h3>
+          <p class="meta">C# · Unity · Gemini API</p>
+          <p>Generative AI drives the dialogue and behavior of 4 concurrent agents, using character state, structured JSON responses and A* pathfinding.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/DerazLab/jumel">JUMeL</a></h3>
+          <p class="meta">Java · HTML/CSS</p>
+          <p>Pseudocode analyzer that turns code into Mermaid.js diagrams and HTML reports so program structure is easier to read.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="beyond">
+      <h2>Beyond <span class="accent">design</span></h2>
+      <p class="lead">What I play, watch and listen to shapes how I think about interaction, pacing and feedback.</p>
+      <div class="grid three">
+        <div class="card"><h3>Games</h3><p>Life is Strange, Detroit: Become Human, Portal. I like games that make choices and consequences visible.</p></div>
+        <div class="card"><h3>Anime</h3><p>Mob Psycho 100, Saiki K., Death Note, Dragon Ball.</p></div>
+        <div class="card"><h3>Music</h3><p>Panchiko, Malcolm Todd, and Rachmaninoff's Piano Concerto No. 2.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2>Let's talk</h2>
+    <p>Looking for a UX design internship for Summer 2027.</p>
+    <p class="links">
+      <a href="mailto:e2208862@uabc.edu.mx">e2208862@uabc.edu.mx</a>
+      <a href="https://github.com/DerazLab">GitHub</a>
+      <a href="https://www.linkedin.com/in/emmanuel-deraz-labrador-903470433/">LinkedIn</a>
+    </p>
+    <small>© 2026 Emmanuel Deraz Labrador · Tijuana, B.C., Mexico</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
